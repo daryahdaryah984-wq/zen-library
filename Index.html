@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharebot1.0 - File Links</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #00c8ff;
+      --secondary: #28a745;
+      --dark: #0f0f0f;
+      --card: rgba(20, 20, 20, 0.9);
+      --text: #fff;
+      --hover: #009ad1;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark) url('https://files.catbox.moe/lzx17r.png') center/cover fixed;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 650px;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+
+    /* Header */
+    .header { margin-bottom: 25px; }
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 5px 0;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    /* Slide */
+    .slide { display: none; }
+    .slide.active { display: block; }
+
+    /* Tombol MediaFire */
+    .button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      background: var(--primary);
+      color: var(--text);
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .button:hover {
+      background: var(--hover);
+      transform: translateY(-2px);
+    }
+
+    /* Tombol Grup */
+    .group-btn {
+      display: block;
+      margin: 25px auto 10px;
+      padding: 14px 25px;
+      background: var(--secondary);
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    .group-btn:hover { background: #1e7e34; }
+
+    /* Navigasi */
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .nav-btn {
+      flex: 1;
+      margin: 0 5px;
+      padding: 12px;
+      background: #2a2a2a;
+      border: none;
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .nav-btn:hover { background: #444; }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img class="logo" src="https://files.catbox.moe/lzx17r.png" alt="Logo">
+      <h1>Sharebot1.0</h1>
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+      <h2>File Access: 1 - 20</h2>
+      <!-- MediaFire 1–20 -->
+      <a href="https://www.mediafire.com/file/link1" class="button">MediaFire 1</a>
+      <a href="https://www.mediafire.com/file/link2" class="button">MediaFire 2</a>
+      <a href="https://www.mediafire.com/file/link3" class="button">MediaFire 3</a>
+      <a href="https://www.mediafire.com/file/link4" class="button">MediaFire 4</a>
+      <a href="https://www.mediafire.com/file/link5" class="button">MediaFire 5</a>
+      <a href="https://www.mediafire.com/file/link6" class="button">MediaFire 6</a>
+      <a href="https://www.mediafire.com/file/link7" class="button">MediaFire 7</a>
+      <a href="https://www.mediafire.com/file/link8" class="button">MediaFire 8</a>
+      <a href="https://www.mediafire.com/file/link9" class="button">MediaFire 9</a>
+      <a href="https://www.mediafire.com/file/link10" class="button">MediaFire 10</a>
+      <a href="https://www.mediafire.com/file/link11" class="button">MediaFire 11</a>
+      <a href="https://www.mediafire.com/file/link12" class="button">MediaFire 12</a>
+      <a href="https://www.mediafire.com/file/link13" class="button">MediaFire 13</a>
+      <a href="https://www.mediafire.com/file/link14" class="button">MediaFire 14</a>
+      <a href="https://www.mediafire.com/file/link15" class="button">MediaFire 15</a>
+      <a href="https://www.mediafire.com/file/link16" class="button">MediaFire 16</a>
+      <a href="https://www.mediafire.com/file/link17" class="button">MediaFire 17</a>
+      <a href="https://www.mediafire.com/file/link18" class="button">MediaFire 18</a>
+      <a href="https://www.mediafire.com/file/link19" class="button">MediaFire 19</a>
+      <a href="https://www.mediafire.com/file/link20" class="button">MediaFire 20</a>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+      <h2>File Access: 21 - 40</h2>
+      <!-- MediaFire 21–40 -->
+      <a href="https://www.mediafire.com/file/link21" class="button">MediaFire 21</a>
+      <a href="https://www.mediafire.com/file/link22" class="button">MediaFire 22</a>
+      <a href="https://www.mediafire.com/file/link23" class="button">MediaFire 23</a>
+      <a href="https://www.mediafire.com/file/link24" class="button">MediaFire 24</a>
+      <a href="https://www.mediafire.com/file/link25" class="button">MediaFire 25</a>
+      <a href="https://www.mediafire.com/file/link26" class="button">MediaFire 26</a>
+      <a href="https://www.mediafire.com/file/link27" class="button">MediaFire 27</a>
+      <a href="https://www.mediafire.com/file/link28" class="button">MediaFire 28</a>
+      <a href="https://www.mediafire.com/file/link29" class="button">MediaFire 29</a>
+      <a href="https://www.mediafire.com/file/link30" class="button">MediaFire 30</a>
+      <a href="https://www.mediafire.com/file/link31" class="button">MediaFire 31</a>
+      <a href="https://www.mediafire.com/file/link32" class="button">MediaFire 32</a>
+      <a href="https://www.mediafire.com/file/link33" class="button">MediaFire 33</a>
+      <a href="https://www.mediafire.com/file/link34" class="button">MediaFire 34</a>
+      <a href="https://www.mediafire.com/file/link35" class="button">MediaFire 35</a>
+      <a href="https://www.mediafire.com/file/link36" class="button">MediaFire 36</a>
+      <a href="https://www.mediafire.com/file/link37" class="button">MediaFire 37</a>
+      <a href="https://www.mediafire.com/file/link38" class="button">MediaFire 38</a>
+      <a href="https://www.mediafire.com/file/link39" class="button">MediaFire 39</a>
+      <a href="https://www.mediafire.com/file/link40" class="button">MediaFire 40</a>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+      <h2>File Access: 41 - 50</h2>
+      <!-- MediaFire 41–50 -->
+      <a href="https://www.mediafire.com/file/link41" class="button">MediaFire 41</a>
+      <a href="https://www.mediafire.com/file/link42" class="button">MediaFire 42</a>
+      <a href="https://www.mediafire.com/file/link43" class="button">MediaFire 43</a>
+      <a href="https://www.mediafire.com/file/link44" class="button">MediaFire 44</a>
+      <a href="https://www.mediafire.com/file/link45" class="button">MediaFire 45</a>
+      <a href="https://www.mediafire.com/file/link46" class="button">MediaFire 46</a>
+      <a href="https://www.mediafire.com/file/link47" class="button">MediaFire 47</a>
+      <a href="https://www.mediafire.com/file/link48" class="button">MediaFire 48</a>
+      <a href="https://www.mediafire.com/file/link49" class="button">MediaFire 49</a>
+      <a href="https://www.mediafire.com/file/link50" class="button">MediaFire 50</a>
+
+      <!-- Tombol Grup -->
+      <a href="https://chat.whatsapp.com/JO8Sd1OnpgqCEVCL7J4Krf?mode=ems_copy_c" class="group-btn">Masuk Grup WhatsApp</a>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="nav-container">
+      <button class="nav-btn" id="prev" disabled>Sebelumnya</button>
+      <button class="nav-btn" id="next">Berikutnya</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    let current = 0;
+
+    function updateSlide() {
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === slides.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => { if (current > 0) { current--; updateSlide(); } });
+    nextBtn.addEventListener('click', () => { if (current < slides.length - 1) { current++; updateSlide(); } });
+  </script>
+
+</body>
+</html>
